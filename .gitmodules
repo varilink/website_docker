@@ -1,0 +1,23 @@
+# ------------------------------------------------------------------------------
+# .gitmodules
+# ------------------------------------------------------------------------------
+
+# The WordPress site that this repository is used to develop and test.
+[submodule "website-wordpress"]
+	path = wordpress
+	url = git@github.com:varilink/website-wordpress.git
+
+# My WordPress tool that I use in this and other projects.
+[submodule "tools-wordpress"]
+	path = tools/wordpress
+	url = git@github.com:varilink/tools-wordpress.git
+
+# My proxy tool that I use in this and other projects.
+[submodule "tools-proxy"]
+	path = tools/proxy
+	url = git@github.com:varilink/tools-proxy.git
+
+# My Sass tool that I use in this and other projects.
+[submodule "tools-npm"]
+	path = tools/npm
+	url = git@github.com:varilink/tools-npm.git
