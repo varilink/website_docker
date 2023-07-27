@@ -1,0 +1,39 @@
+version: "3.6"
+
+services:
+
+  wordpress:
+
+    volumes:
+      - ./wordpress/theme:/var/www/html/wp-content/themes/wp-bootstrap-starter-child:ro
+
+  db:
+
+    volumes:
+      - ./backup:/docker-entrypoint-initdb.d:ro
+
+  gimp:
+
+    volumes:
+      - ./wordpress/gimp/:/gimp/
+      - ./wordpress/theme/assets/img/:/gimp/dist/
+
+
+
+  sass:
+
+    build: ./tools/npm
+
+    entrypoint: /node_modules/.bin/sass
+
+    volumes:
+      - ./wordpress/node_modules:/node_modules
+      - ./wordpress/theme/assets/scss:/scss
+      - ./wordpress/theme/assets/css:/css
+
+  wp-cli:
+
+    volumes:
+      - ./wordpress/theme:/var/www/html/wp-content/themes/wp-bootstrap-starter-child:ro
+      - ./backup:/backup:ro
+      - ./wordpress/wp-scripts/:/wp-scripts/:ro
