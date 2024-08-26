@@ -26,3 +26,6 @@
 [submodule "tools/gimp"]
 	path = tools/gimp
 	url = git@github.com:varilink/tools-gimp.git
+[submodule "tools/wordpress-parse-theme-css"]
+	path = tools/wordpress-parse-theme-css
+	url = git@github.com:varilink/tools_wordpress-parse-theme-css.git
