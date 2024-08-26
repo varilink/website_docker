@@ -2,30 +2,28 @@
 # .gitmodules
 # ------------------------------------------------------------------------------
 
-# The WordPress site that this repository is used to develop and test.
-[submodule "website-wordpress"]
-	path = wordpress
-	url = git@github.com:varilink/website-wordpress.git
+# ------
 
-# My WordPress tool that I use in this and other projects.
-[submodule "tools-wordpress"]
-	path = tools/wordpress
-	url = git@github.com:varilink/tools-wordpress.git
-
-# My proxy tool that I use in this and other projects.
-[submodule "tools-proxy"]
-	path = tools/proxy
-	url = git@github.com:varilink/tools-proxy.git
-
-# My Sass tool that I use in this and other projects.
-[submodule "tools-npm"]
-	path = tools/npm
-	url = git@github.com:varilink/tools-npm.git
-
-# My GIMP tool for generating theme images
 [submodule "tools/gimp"]
 	path = tools/gimp
-	url = git@github.com:varilink/tools-gimp.git
+	url = git@github.com:varilink/tools_gimp.git
+
+[submodule "tools/npm"]
+	path = tools/npm
+	url = git@github.com:varilink/tools_npm.git
+
+[submodule "tools/proxy"]
+	path = tools/proxy
+	url = git@github.com:varilink/tools_proxy.git
+
+[submodule "tools/wordpress"]
+	path = tools/wordpress
+	url = git@github.com:varilink/tools_wordpress.git
+
 [submodule "tools/wordpress-parse-theme-css"]
 	path = tools/wordpress-parse-theme-css
 	url = git@github.com:varilink/tools_wordpress-parse-theme-css.git
+
+[submodule "wordpress"]
+	path = wordpress
+	url = git@github.com:varilink/website_wordpress.git
