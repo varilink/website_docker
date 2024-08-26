@@ -1,9 +1,0 @@
-# ------------------------------------------------------------------------------
-# .gitignore
-# ------------------------------------------------------------------------------
-
-# The contents of any backup that we're using to restore locally from.
-/backup
-
-# Posts that we're working on and have exported to preserve or migrate them.
-/posts
