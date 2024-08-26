@@ -20,6 +20,10 @@
 	path = tools/wordpress
 	url = git@github.com:varilink/tools_wordpress.git
 
+[submodule "tools/wordpress-make-backup"]
+	path = tools/wordpress-make-backup
+	url = git@github.com:varilink/tools_wordpress-make-backup.git
+
 [submodule "tools/wordpress-parse-theme-css"]
 	path = tools/wordpress-parse-theme-css
 	url = git@github.com:varilink/tools_wordpress-parse-theme-css.git
